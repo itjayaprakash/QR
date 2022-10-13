@@ -91,7 +91,8 @@ img {
                     .then(output => {
                         console.log(output);
                         loader.style.display = "none";
-                        document.querySelector("#img").src=output.url
+                        var freshURL = output.URL.replace('itjayaprakash.github.io/QR/','')
+                        document.querySelector("#img").src= freshURL;
                     
                     }).catch(error=> console.log("Error", error))
 
